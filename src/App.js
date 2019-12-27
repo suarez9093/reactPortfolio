@@ -4,6 +4,7 @@ import NavbarComponent from "./components/Navbar";
 import Header from "./components/Header";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
+import Button from '@material-ui/core/Button';
 import "./style.css";
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
         </Row>
         <Row>
           <Portfolio/>
+          <Button variant="contained" color="primary">
+      Hello World
+    </Button>
         </Row>
         <Row>
           <Footer/>

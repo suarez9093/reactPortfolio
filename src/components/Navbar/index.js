@@ -4,7 +4,7 @@ import "./style.css"
 function NavbarComponent(){
     return(
         <div>
-            <h1>Social media</h1>
+            <h1>Navbar</h1>
                 
         </div>
     )
