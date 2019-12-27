@@ -1,15 +1,21 @@
 import React from 'react';
 import { Container, Row, Col } from "reactstrap";
-import Navbar from "./components/Navbar";
+import NavbarComponent from "./components/Navbar";
+import Header from "./components/Header";
+import "./style.css";
 
 function App() {
   return (
     <div>
-    <Navbar />
-    <Container>
-      <Row></Row>
+      <Container>
+          
+              <Header/>
+          
+        <Row>
+          <NavbarComponent/>
+        </Row>
 
-    </Container>
+      </Container>
     </div>
   );
 }
