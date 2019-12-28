@@ -1,11 +1,9 @@
-<!-- ABOUT THE PROJECT -->
-## About The Project
-A simple hangman game. Simply begin typing your guesses on the keyboard. You have 9 attempts to get the word right.
-
-
 ### Built With
 * [React](https://reactjs.org/)
 * [Material-UI](https://material-ui.com/)
+* [Pose](https://popmotion.io/pose/)
+
+
 
 
 <!-- CONTACT -->
