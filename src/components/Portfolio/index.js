@@ -1,11 +1,30 @@
-import React from "react";
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
 
-function Portfolio(){
-    return(
-        <div>
-            <h1>Portfolio</h1>
-        </div>
-    )
-};
+const useStyles = makeStyles(theme => ({
+  root: {
+    display: 'flex',
+    '& > *': {
+      margin: theme.spacing(1),
+      width: theme.spacing(16),
+      height: theme.spacing(24),
+    },
+  },
+}));
 
-export default Portfolio;
+export default function Portfolio() {
+  const classes = useStyles();
+
+  return (
+    <div className={classes.root}>
+      {/* <Paper elevation={0} />
+      <Paper /> */}
+      <Paper elevation={3} />
+      <Paper elevation={3} />
+      <Paper elevation={3} />
+      <Paper elevation={3} />
+      <Paper elevation={3} />
+    </div>
+  );
+}
