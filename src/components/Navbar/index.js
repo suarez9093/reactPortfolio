@@ -14,6 +14,7 @@ import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 
 const drawerWidth = 240;
 const color = "red";
@@ -56,10 +57,10 @@ export default function NavbarComponent() {
       >
         <div className={classes.toolbar} />
         <List>
-            <ListItem><GitHubIcon/></ListItem>
-            <ListItem><LinkedInIcon/></ListItem>
+        <ListItem><PhoneIphoneIcon/></ListItem>
             <ListItem><MailIcon/></ListItem>
             <ListItem><GitHubIcon/></ListItem>
+            <ListItem><LinkedInIcon/></ListItem>
         </List>
       </Drawer>
     </div>
