@@ -1,16 +1,11 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import headshot from "./img/headshot.jpg";
 
-function Header(){
-    return(
-        <div>
-            <h1>Alex Suarez</h1>
-                <ul>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-        </div>
-    )
+export default function Header() {
+ 
+  return (
+    <div>
+    
+    </div>
+  );
 }
-
-export default Header;
