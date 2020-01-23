@@ -1,0 +1,30 @@
+.nav_item {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  background-color: #dddddd;
+}
+
+.icons {
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+#sideBar {
+  display: grid;
+  width: 10%;
+  background-color: red;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+li {
+  list-style-type: none;
+  padding: 50px;
+}
+
+/*# sourceMappingURL=navbar.css.map */
