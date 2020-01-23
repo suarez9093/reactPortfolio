@@ -1,14 +1,10 @@
 import React from 'react';
-// import dbzThumbnail from "./img/dbzThumbnail.png"
-// import toyStory from "./img/toyStory.jpg";
-// import realEstate from "./img/realEstate.jpg";
-// import youTube from "./img/youtubeClone.jpg";
-
+import "./css/portfolio.css";
 
 export default function Portfolio() {
   return (
-    <div>
-      
-    </div>
+    <section>
+      <h1>Portfolio</h1>
+    </section>
   )
 };

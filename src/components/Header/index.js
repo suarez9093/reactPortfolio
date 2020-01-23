@@ -1,11 +1,12 @@
 import React from 'react';
+import "./css/header.css";
 import headshot from "./img/headshot.jpg";
 
 export default function Header() {
  
   return (
-    <div>
-    
-    </div>
+    <header>
+      <h1>Hello</h1>
+    </header>
   );
 }

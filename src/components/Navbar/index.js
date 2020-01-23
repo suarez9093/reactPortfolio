@@ -1,16 +1,16 @@
 import React from 'react';
 import "./css/navbar.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons"
-import { faMobileAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons"
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+// import { faMobileAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
 
 function NavbarComponent() {
 
   return (
-    <div>
       <nav>
-        <ul>
+        <h1>Navbar</h1>
+        {/* <ul>
           <li>
             <a href="https://github.com/suarez9093">
               <FontAwesomeIcon icon={faGithubSquare} className="icons" />
@@ -25,9 +25,9 @@ function NavbarComponent() {
               <FontAwesomeIcon icon={faMobileAlt} id="phone" className="icons" />
             </a>
           </li>
-        </ul>
+        </ul> */}
       </nav>
-    </div>
+   
 
 
 
