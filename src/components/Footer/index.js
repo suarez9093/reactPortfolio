@@ -4,7 +4,7 @@ import "./css/footer.css";
 function Footer(){
     return(
         <footer>
-            <h1>Footer</h1>
+            <p>&copy; 2020 built by Alex Suarez</p>
         </footer>
     )
 };

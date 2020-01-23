@@ -2,7 +2,7 @@
 .flex-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
     grid-row: 1 / -1;
   }
 
@@ -12,10 +12,10 @@
 }
   li {
       list-style-type: none;
-      padding-bottom: 10px;
+      padding-bottom: 35px;
   }
   .icons {
-      font-size: 35px;
+      font-size: 40px;
       transition: all .2s ease-in-out; 
   }
 

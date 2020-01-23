@@ -8,8 +8,12 @@ h1 {
 .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 30% 400% 30%;
+  grid-template-rows: 50px 300px 50px;
   grid-gap: 3px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
 /*# sourceMappingURL=app.css.map */
