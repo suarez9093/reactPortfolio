@@ -1,30 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import "./css/navbar.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithubSquare } from "@fortawesome/free-brands-svg-icons"
-
+import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faMobileAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
 
 function NavbarComponent() {
-
-  const [navToggle, setNavToggle] = useState(false);
-
-  console.log(navToggle)
-
-  function toggleNav() {
-    setNavToggle(toggle => !toggle)
-    if (navToggle) {
-      // document.getElementById("main").style.marginLeft = "25%";
-      document.getElementById("mySidebar").style.width = "25%";
-      document.getElementById("mySidebar").style.display = "block";
-    } else if (!navToggle) {
-      // document.getElementById("main").style.marginLeft = "0%";
-      document.getElementById("mySidebar").style.display = "none";
-      document.getElementById("openNav").style.display = "inline-block";
-    }
-
-  }
-
 
   return (
     <div>
@@ -32,12 +13,10 @@ function NavbarComponent() {
         <ul>
           <li>
             <FontAwesomeIcon icon={faGithubSquare} className="icons" />
-            <FontAwesomeIcon icon={faGithubSquare} className="icons" />
-            <FontAwesomeIcon icon={faGithubSquare} className="icons" />
-            <FontAwesomeIcon icon={faGithubSquare} className="icons" />
+            <FontAwesomeIcon icon={faLinkedin} className="icons" />
+            <FontAwesomeIcon icon={faEnvelope} className="icons" />
+            <FontAwesomeIcon icon={faMobileAlt} className="icons" />
           </li>
-
-
         </ul>
       </nav>
     </div>
