@@ -1,28 +1,41 @@
-.nav_item {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 60px;
-  background-color: #dddddd;
-}
-
-.icons {
-    font-size: 40px;
-    justify-content: center;
-    align-items: center;
-}
-
-#sideBar {
-    display: grid;
-    width: 10%;
-    background-color: red;
+nav {
     position: fixed;
-    left: 0;
+    left: 0px;
+    height: 40px;
+    // background-color: #2C64B4;
+    height: 100%;
+    width: 80px;
+    align-items: center;
     top: 0;
-    bottom: 0;
 }
+.icons {
+    font-size: 35px;
+    padding-bottom: 40px;
+    
+};
 
-li {
+ul {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
-    padding: 50px;
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+};
+#phone {
+    position: relative;
+    left: 6px;
+}
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: #BCBEC0;
+    opacity: 50%;
+}
+a:hover {
+    color: black;
+    opacity: 100%;
 }
