@@ -12,10 +12,10 @@ function NavbarComponent() {
       <nav>
         <ul>
           <li>
-            <a href="http://www.github.com">
+            <a href="https://github.com/suarez9093">
               <FontAwesomeIcon icon={faGithubSquare} className="icons" />
             </a>
-            <a href="http://www.linkedin.com">
+            <a href="https://www.linkedin.com/in/alexsuarez9093/">
               <FontAwesomeIcon icon={faLinkedin} className="icons" />
             </a>
             <a href="mailto:suarez9093@hotmail.com">
