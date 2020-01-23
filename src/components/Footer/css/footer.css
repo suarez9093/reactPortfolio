@@ -1,0 +1,15 @@
+footer > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  grid-column: 2/-1;
+}
+
+p {
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=footer.css.map */

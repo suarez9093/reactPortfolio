@@ -1,10 +1,11 @@
 import React from "react";
+import "./css/footer.module.scss";
 
 function Footer(){
     return(
-        <div>
-            <h1>Footer</h1>
-        </div>
+        <footer>
+            <p>&copy; 2020 built by Alex Suarez</p>
+        </footer>
     )
 };
 

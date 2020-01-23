@@ -1,11 +1,18 @@
 import React from 'react';
-import headshot from "./img/headshot.jpg";
+import {portfolioImage, infoContainer} from "./css/header.module.scss";
+import headshot from "./img/headshot.png";
 
 export default function Header() {
  
   return (
-    <div>
-    
-    </div>
+    <header>
+      <img id={portfolioImage} src={headshot} alt="headshot"/>
+      <div className={infoContainer}>
+        <ul>
+          {/* <li>About Me</li>
+          <li>Resume</li> */}
+        </ul>
+      </div>
+    </header>
   );
 }
