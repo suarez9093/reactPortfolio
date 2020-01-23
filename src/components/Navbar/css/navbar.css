@@ -1,6 +1,44 @@
-nav {
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-row: 1/-1;
-  background-color: blue;
+}
+
+#phone {
+  position: relative;
+  left: 6px;
+}
+
+li {
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+
+.icons {
+  font-size: 35px;
+  transition: all 0.2s ease-in-out;
+}
+
+.icons:hover {
+  transform: scale(1.1);
+}
+
+.square {
+  position: relative;
+  left: 2px;
+}
+
+a {
+  color: #BDBEC0;
+}
+
+a:hover {
+  color: black;
+}
+
+ul {
+  padding-inline-start: 0;
 }
 
 /*# sourceMappingURL=navbar.css.map */

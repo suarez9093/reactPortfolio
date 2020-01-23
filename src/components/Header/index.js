@@ -6,7 +6,7 @@ export default function Header() {
  
   return (
     <header>
-      <h1>Hello</h1>
+      <h1>Header</h1>
     </header>
   );
 }
