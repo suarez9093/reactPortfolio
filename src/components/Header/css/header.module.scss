@@ -1,11 +1,15 @@
 header {
     grid-column: 2 / -1;
     grid-row: 1 / 2 ;
-    // background-color: red;
-    display: flex;
 }
 
-#headshot {
+.infoContainer {
+    display: flex;
+    justify-content: center;
+  
+}
+
+#portfolioImage {
     height: 50px;
 }
 
