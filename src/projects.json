@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Project",
     "image": "Image",
-    "link": "link",
+    "link": "http://www.google.com",
     "github": "github",
     "description": "description"
 },

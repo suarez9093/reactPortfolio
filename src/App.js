@@ -10,26 +10,38 @@ import PortfolioCard from "./components/ProjectCard";
 
 
 function App() {
-  const [ card , setCard ] = useState(projects);
+  const [ card, setCard ] = useState(projects)
+
+  
+  
+    // console.log(this.state.projects)
+    return (
+      <div className={container}>
+            <NavbarComponent />
+            <Header />
+            <Portfolio>
+            {
+              card.map(project => (
+                  
+                <PortfolioCard 
+                 id={project.id}
+                 name={project.name}
+                 description={project.description}
+                 link={project.link}
+                 github={project.github}
+                />
+              ))
+            }
+            </Portfolio>
+           
+            <Footer />
+           
+      </div>
+    );
+
+  
  
 
-  return (
-    <div className={container}>
-          {/* <NavbarComponent /> */}
-          {/* <Header /> */}
-          <Portfolio {[...card].map(project => {
-            <PortfolioCard 
-             id={project.id}
-             name={project.name}
-             description={project.description}
-             link={project.link}
-             github={project.github}
-            />
-          })} />
-          {/* <Footer /> */}
-         
-    </div>
-  );
 }
 
 export default App;

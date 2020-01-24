@@ -1,10 +1,13 @@
 import React from 'react';
-// import { flipBox, flipBoxInner, flipBoxFront, flipBoxBack } from "./css/portfolio.module.scss";
+import { container } from "./css/portfolio.module.scss";
 // import dbz from "./img/dbz.png"
 
  function Portfolio(props) {
+  //  console.log(props)
   return (
-   <div></div>
+   <div className={container}>
+     {props.children}
+   </div>
       )
     };
 export default Portfolio;
