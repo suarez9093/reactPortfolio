@@ -1,5 +1,5 @@
 import React from 'react';
-import { flexContainer, phone, linkIcons, square, projectLinks } from "./css/navbar.module.scss";
+import { flexContainer, phone, linkIcons, square, projectLinks, navbar } from "./css/navbar.module.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { faMobileAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons"
@@ -8,7 +8,7 @@ import { faMobileAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 function NavbarComponent() {
 
   return (
-    <nav className={flexContainer}>
+    <nav className={navbar}>
       <ul>
         <li><a className={projectLinks} href="https://github.com/suarez9093">
           <FontAwesomeIcon icon={faGithubSquare} className={linkIcons} />

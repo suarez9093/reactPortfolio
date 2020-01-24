@@ -1,13 +1,9 @@
-section {
-   
-    grid-column: 2 / -1;
-}
+
 
 .flipBox {
     background-color: transparent;
     width: 300px;
     height: 200px;
-    // border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
   
@@ -37,7 +33,7 @@ section {
   /* Style the front side (fallback if image is missing) */
   .flipBoxFront {
     // background-color: #bbb;
-    // background: orange;
+    background: orange;
     color: black;
     border-radius: 1rem;
     padding: 2rem;

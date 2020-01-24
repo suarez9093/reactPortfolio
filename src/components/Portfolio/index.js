@@ -1,13 +1,15 @@
 import React from 'react';
-import { container } from "./css/portfolio.module.scss";
+// import { portfolio } from "./css/portfolio.module.scss";
 // import dbz from "./img/dbz.png"
+import { Container, Row, Col } from 'reactstrap';
 
- function Portfolio(props) {
+function Portfolio(props) {
   //  console.log(props)
   return (
-   <div className={container}>
-     {props.children}
-   </div>
-      )
-    };
+      <div>
+        {props.children}
+      </div>
+
+  )
+};
 export default Portfolio;
