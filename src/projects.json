@@ -1,0 +1,34 @@
+[
+    {
+    "id": 1,
+    "name": "DragonBall Z Hangman",
+    "image": "https://i.pinimg.com/originals/60/a9/61/60a96199afa8469b7c3c46810ed86816.png",
+    "link": "https://suarez9093.github.io/hangman/",
+    "github": "https://github.com/suarez9093/hangman",
+    "description": "A hangman Game using characters from the anime DragonBall Z."
+},
+{
+    "id": 2,
+    "name": "Real Estate App",
+    "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1266&q=80",
+    "link": "https://project-three-real-estate.herokuapp.com/",
+    "github": "https://github.com/suarez9093/real-estate",
+    "description": "An app that lets you set an appointment to view a home that is listed on the market without the need of a real estate agent."
+},
+{
+    "id": 3,
+    "name": "Toy Story Click Game",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Toy_Story.svg/320px-Toy_Story.svg.png",
+    "link": "https://whispering-river-96203.herokuapp.com/",
+    "github": "https://github.com/suarez9093/clickygame",
+    "description": "A simple memory challenge game using Toy Story characters."
+},
+{
+    "id": 4,
+    "name": "YouTube Clone",
+    "image": "https://www.freeiconspng.com/uploads/youtube-logo-png-picture-13.png",
+    "link": "https://enigmatic-scrubland-10809.herokuapp.com/",
+    "github": "https://github.com/suarez9093/react-youtube",
+    "description": "A small YouTube clone that lets users search for videos."
+}
+]
