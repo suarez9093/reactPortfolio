@@ -1,20 +1,6 @@
-h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2em;
+h2 {
+  font-family: "Poppins", cursive;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 50px 300px 50px;
-  grid-gap: 3px;
-  background-color: green;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-}
 
 /*# sourceMappingURL=app.css.map */

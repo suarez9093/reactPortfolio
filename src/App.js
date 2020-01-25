@@ -1,6 +1,7 @@
 import React, { useState, PropTypes } from 'react';
 import NavbarComponent from "./components/Navbar";
 import {container} from "./css/app.module.scss";
+import "./css/app.css"
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import projects from "./projects.json";

@@ -4,7 +4,7 @@
 .header {
     background-image: url("../img/backgroundFour.jpg"); // sets the background image
     background-size: cover; // specify the size of the background (cover: resize to cover entire container.)
-    padding-top: 40%; // padding: space between text and border
+    padding-top: 200px; // padding: space between text and border
     position: relative; // (relative: position relative to normal position
     z-index: 1; // specifies the stack order of an element. Greater in front lower in back. Only works on positioned elements
 }
@@ -72,7 +72,6 @@ header:before { // insert something before the header section
     display: flex;
     justify-content: center;
 
-  
 
 }
 // ====================================================================================
