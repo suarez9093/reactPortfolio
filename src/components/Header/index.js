@@ -4,7 +4,7 @@ import "./css/header.css"
 import headshot from "./img/headshot.png";
 import { Container, Row, Col, Button } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin, faInstagram} from "@fortawesome/free-brands-svg-icons"
+import { faGithub, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons"
 import { faPaperclip } from "@fortawesome/free-solid-svg-icons"
 import resume from "./resume/alex_suarez_resume.pdf";
 
@@ -13,7 +13,7 @@ function Header() {
     <header className={header}>
       <Container>
         <Row>
-        <Col xs="2"></Col>
+          <Col xs="2"></Col>
           <Col >
             <div className={intro}>
               <div className={profileImage}>
@@ -36,7 +36,7 @@ function Header() {
                   {/* <a className={resumeLink} href={resume}>View Resume</a> */}
                 </li>
               </ul>
-              <ul  className={socialIcons}>
+              <ul className={socialIcons}>
                 <li className={socialIcons}>
                   <a title="Github" href="https://github.com/suarez9093">
                     <FontAwesomeIcon className={fontAwesomeIcon} icon={faGithub} />

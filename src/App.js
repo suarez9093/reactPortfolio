@@ -14,9 +14,8 @@ function App() {
   return (
     <div>
           <Header />
-      <h1>Portfolio</h1>
-      <h1>About</h1>
-      <h1>Footer</h1>
+          <Portfolio />
+     
       </div>
       
    

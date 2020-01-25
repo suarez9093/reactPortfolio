@@ -1,14 +1,14 @@
 import React from 'react';
-// import { portfolio } from "./css/portfolio.module.scss";
-// import dbz from "./img/dbz.png"
-import { Container, Row, Col } from 'reactstrap';
+import {portfolioSection, section} from "./css/portfolio.module.scss";
+import { Container, Row, Col } from "reactstrap";
 
 function Portfolio(props) {
-  //  console.log(props)
+ 
   return (
-      <div>
-        {props.children}
-      </div>
+    <div className={`${portfolioSection} ${section}`}>
+
+      <Container></Container>
+    </div>
 
   )
 };
