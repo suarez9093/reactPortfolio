@@ -1,3 +1,5 @@
+$yellowColor: #FFA804;
+$reactColor: #61DAFB;
 
 // HEADER SECTION
 // ====================================================================================
@@ -18,7 +20,6 @@ header:before { // insert something before the header section
     right: 0;  // right edge of positioned header element spans left from edge of nearest positioned ancestor
     background: rgba(0,0,0, .2); // sets all the background properties in one declaration (same as background-color)
 }
-
 .header:after { //insert something after the header selector
     content: '';
     position: absolute; // sets position relative to first ancestor position
@@ -29,17 +30,6 @@ header:before { // insert something before the header section
     z-index: -1; // sets the stack order of the header section (negative numbers are not allowed)
     background: #fff; // sets the background color after the header section
 }
-// .container {
-//     position: relative; // position the container relative to it's current position
-//     margin-left: auto; // when a margin is set to auto it horizontally centers the element 
-//     margin-right: auto;
-    
-
-//     // just to see where the div is
-//     // background: red;
-//     // 
-// }
-
 .intro {
     padding: 0 20px; // first value is for top and bottom second is for right and left. Padding is used to put space between content and border
     margin-top: 100px; // Margin sets the space between element borders. Top sets the margin above the top border pushing the element down
@@ -57,21 +47,44 @@ header:before { // insert something before the header section
     top: -100px; // affects vertical positioning. negative will push the element up instead of down. Could of used bottom 100px as well.
     margin-bottom: -70px; // negative bottom border brings other elements closer to the elements bottom borders 
 }
-
 #portfolioImage {
-    width: 100%;
-    vertical-align: middle;
-    border-style: none;
-    height: 200px;
-    width: auto;
-    margin: auto;
-    position: relative;
-    right: 68px;
+    vertical-align: middle; // sets the vertical alignment of the image. Middle: element is aligned to the center of its parent
+    border-style: none; // setting the style of the border around the image
+    height: 200px; // setting the height of the image to 200px
+    width: auto; // setting the width of the element. Browser sets the width when on auto
+    margin: auto; // moving the image to the center of it's containing parent
+    position: relative; // setting the image relative to where it is
+    right: 68px; // pushing the image over 68px to the right
 }
-.infoContainer {
-    display: flex;
-    justify-content: center;
 
-
+// Information section
+//-------------------------------------
+.fontYellow {
+    color: $yellowColor; // setting the font color to yellow using global variable
 }
+.fontBlue {
+    color: $reactColor; // setting font color to blue usig global variable
+}
+.information {
+    margin-top: 30px; // setting the top margin border
+    margin-bottom: 30px; // setting the bottom margin border
+    font-family: "Poppins", cursive; // setting the font 
+}
+.socialIcons {
+    font-size: 40px; // sets the size of the font awesome icons
+    display: inline; // displays the icons next to eachother
+    padding-left: 20px; // sets the padding on the left of the icons
+    position: relative; // sets the icons position relative to where they are
+    right: 10px; // shifts the items to the left;
+}
+.fontAwesomeIcon{
+    transition: color .15s; // sets a transition effect of the color that happens in 15seconds
+    color: $reactColor; // setting font color to blue usig global variable
+}
+.fontAwesomeIcon:hover {
+    transition-timing-function: ease-in-out; // transition happens in and out
+    color: $yellowColor; // changes the color of the icons
+}
+
+//-------------------------------------
 // ====================================================================================
