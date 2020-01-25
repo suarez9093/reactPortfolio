@@ -1,10 +1,78 @@
 
-.infoContainer {
-    display: flex;
-    justify-content: center;
-  
+// HEADER SECTION
+// ====================================================================================
+.header {
+    background-image: url("../img/backgroundFour.jpg"); // sets the background image
+    background-size: cover; // specify the size of the background (cover: resize to cover entire container.)
+    padding-top: 40%; // padding: space between text and border
+    position: relative; // (relative: position relative to normal position
+    z-index: 1; // specifies the stack order of an element. Greater in front lower in back. Only works on positioned elements
+}
+header:before { // insert something before the header section
+    content: ''; // insert empty string before the header selector
+    z-index: -1; // set the order of stact to 0?
+    position: absolute; //sets the position relative to it's first position (not static) ancestor
+    top: 0; // top edge of positioned header element down from top edge of nearest positioned ancestor
+    bottom: 0; // top edge of positioned header element up from bottom edge of nearest positioned ancestor
+    left: 0; // left edge of positioned header element spans right from edge of nearest positioned ancestor
+    right: 0;  // right edge of positioned header element spans left from edge of nearest positioned ancestor
+    background: rgba(0,0,0, .2); // sets all the background properties in one declaration (same as background-color)
+}
+
+.header:after { //insert something after the header selector
+    content: '';
+    position: absolute; // sets position relative to first ancestor position
+    bottom: 0; // border of bottom edge is pushed down, lifting the header up
+    left: 0; // border of the left edge is pushed out sending the header to the right
+    right: 0; // border of the right edge is pushed out sending the header to the left
+    height: 150px; // sets the height of the div on
+    z-index: -1; // sets the stack order of the header section (negative numbers are not allowed)
+    background: #fff; // sets the background color after the header section
+}
+// .container {
+//     position: relative; // position the container relative to it's current position
+//     margin-left: auto; // when a margin is set to auto it horizontally centers the element 
+//     margin-right: auto;
+    
+
+//     // just to see where the div is
+//     // background: red;
+//     // 
+// }
+
+.intro {
+    padding: 0 20px; // first value is for top and bottom second is for right and left. Padding is used to put space between content and border
+    margin-top: 100px; // Margin sets the space between element borders. Top sets the margin above the top border pushing the element down
+    text-align: center; // sets the horizontal alignment of text in element
+    background: white; // sets the background color. background is shorthand for the other background properties that can be set
+}
+.intro .profileImage {
+    height: 200px; // sets the height of the container
+    width: 200px; // sets the width of the container
+    border-radius: 100px; // sets the radius of the elements corners. Allows to add rounded corners
+    // background: purple;
+    margin: auto; // margin auto sets the container to the center of the page
+    overflow: hidden; // controls what happens to content that is too big to fit the area. Hidden: overflow is clipped and the rest of the content will be invisible
+    position: relative; // sets the position relative to where the element is
+    top: -100px; // affects vertical positioning. negative will push the element up instead of down. Could of used bottom 100px as well.
+    margin-bottom: -70px; // negative bottom border brings other elements closer to the elements bottom borders 
 }
 
 #portfolioImage {
-    height: 50px;
+    width: 100%;
+    vertical-align: middle;
+    border-style: none;
+    height: 200px;
+    width: auto;
+    margin: auto;
+    position: relative;
+    right: 68px;
 }
+.infoContainer {
+    display: flex;
+    justify-content: center;
+
+  
+
+}
+// ====================================================================================
