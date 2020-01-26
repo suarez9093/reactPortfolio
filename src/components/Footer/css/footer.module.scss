@@ -1,10 +1,9 @@
 
-footer > p {
+.footer {
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-p {
-    font-size: 12px;
+    align-items: center;
+    height: 100px;
+    background: #61dafb;
+    font-family: "Poppins";
 }
