@@ -7,7 +7,7 @@ function Footer() {
        
              
                     <footer className={footer}>
-                        <p>&copy; 2020 built by Alex Suarez</p>
+                        <p>&copy; 2020 built in React by Alex Suarez</p>
                     </footer>
               
     )
