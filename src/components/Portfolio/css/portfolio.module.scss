@@ -28,26 +28,41 @@ $myWorkColor: #999;
   color: $myWorkColor // setting the text color
 }
 .portfolioSection .portfolioFilter {
-  margin-top: 60px;
+  margin-top: 60px; // setting the top margin (space between current element border and other element border
   
 }
 .portfolioLinks {
-  color: $reactColor;
-  padding-right: 50px;
+  color: $reactColor; // setting font color
+  padding-right: 50px; // setting the space between text element border
 }
 .current {
-  color: $reactColor !important;
+  color: $reactColor !important; // setting text color
 }
 .portfolioLinks {
-  color: #666;
-  display: inline-block;
-  text-decoration: none !important;
-  line-height: 1;
-  transition: all .25s ease-in-out;
-  position: relative;
-  left: 30px
+  color: #666; // setting text color
+  display: inline-block; // display the element on a new line and take up the entire width
+  text-decoration: none !important; // getting rid of the underlines
+  line-height: 1; // setting the height of the line (space between text above and below eachother 
+  transition: all .25s ease-in-out; // setting a transition effect
+  position: relative; // setting the position of the element relative to where it is default
+  left: 30px // pushing the element to the left
   
 }
+
+.projectContainer {
+  background: red;
+  height: 1000px;
+}
+
+.thumbnail {
+  width: 30%;
+  height: auto;
+  position: absolute;
+}
+
+
+
+
 @media screen and (max-width: 995px) {
   .portfolioLinks {
     left: -5px
