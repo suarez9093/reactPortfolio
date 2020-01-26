@@ -1,0 +1,378 @@
+$reactColor: #61dafb;
+$myWorkColor: #999;
+$white: white;
+
+.portfolioSection {
+  padding-bottom: 0; // setting the bottom padding to 0
+  // background: red; //
+}
+.section {
+  padding: 100px 0 50px; //setting top is first left and right are second bottom is third
+  // background-color: orange; // setting background color
+}
+.section .heading {
+  margin-bottom: 60px;
+}
+.heading:before {
+  content: ""; // setting the content before the heading to empty
+  height: 10px; // setting height of div to 10px
+  width: 50px; // setting the width of the div
+  border-radius: 5px; // rounds out the corners
+  margin-bottom: 20px; // setting the margin (space between element borders and other element borders)
+  display: block; // display the element on a new line and take up the whole width
+  background: $reactColor; // setting the color
+}
+.heading {
+  // background-color: orange; // setting the background color
+}
+.myWorkColor {
+  color: $myWorkColor; // setting the text color
+}
+.portfolioSection .portfolioFilter {
+  margin-top: 60px; // setting the top margin (space between current element border and other element border
+}
+.portfolioLinks {
+  color: $reactColor; // setting font color
+  padding-right: 50px; // setting the space between text element border
+}
+.current {
+  color: $reactColor !important; // setting text color
+}
+.portfolioLinks {
+  color: #666; // setting text color
+  display: inline-block; // display the element on a new line and take up the entire width
+  text-decoration: none !important; // getting rid of the underlines
+  line-height: 1; // setting the height of the line (space between text above and below eachother
+  transition: all 0.25s ease-in-out; // setting a transition effect
+  position: relative; // setting the position of the element relative to where it is default
+  left: 30px; // pushing the element to the left
+}
+
+.projectContainer {
+  // background: red;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 995px) {
+  .portfolioLinks {
+    left: -5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .portfolioLinks {
+    left: -25px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .portfolioFilter {
+    position: relative;
+    top: 50px;
+    right: 100px;
+  }
+  .portfolioLinks {
+    padding-right: 10px;
+    margin-top: 17px;
+  }
+}
+
+.container {
+  position: relative;
+}
+.flipBox {
+  background-color: transparent;
+  margin: 5px;
+  width: 447px;
+  height: 300px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flipBoxInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flipBox:hover .flipBoxInner {
+  transform: rotateX(180deg);
+}
+
+/* Position the front and back side */
+.flipBoxFront,
+.flipBoxBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flipBoxFront {
+  // background-color: #bbb;
+
+  background: url("https://images.unsplash.com/photo-1541877944-ac82a091518a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80") no-repeat center bottom;
+  background-size: cover;
+  // background-position: 50% ;
+  color: black;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-right: 2rem;
+  box-shadow: 4px 4px 15px 2px rgba(black, 0.75);
+}
+
+/* Style the back side */
+.flipBoxBack {
+  background: $white;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-right: 2rem;
+  box-shadow: 4px 4px 15px 2px rgba(black, 0.75);
+  color: black;
+  transform: rotateX(180deg);
+}
+
+//
+
+.flipBoxTwo {
+  background-color: transparent;
+  margin: 5px;
+  width: 450px;
+  height: 700px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flipBoxTwoInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flipBoxTwo:hover .flipBoxTwoInner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flipBoxTwoFront,
+.flipBoxTwoBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flipBoxTwoFront {
+  background: url("https://images.unsplash.com/photo-1556955112-28cde3817b0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80") no-repeat center ;
+  background-size: cover;
+  // background-color: #bbb;
+  // background: orange;
+  object-fit: fill;
+  display: block;
+  // 
+  color: black;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-right: 2rem;
+  box-shadow: 4px 4px 15px 2px rgba(black, 0.75);
+}
+
+/* Style the back side */
+.flipBoxTwoBack {
+  background: $white;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-right: 2rem;
+  box-shadow: 4px 4px 15px 2px rgba(black, 0.75);
+  color: black;
+  transform: rotateY(180deg);
+}
+
+//
+
+.flipBoxThree {
+  background-color: transparent;
+  margin: 5px;
+  width: 220px;
+  height: 395px;
+  position: relative;
+  left: 920px;
+  bottom: 405px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flipBoxThreeInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flipBoxThree:hover .flipBoxThreeInner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flipBoxThreeFront,
+.flipBoxThreeBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flipBoxThreeFront {
+  // background-color: #bbb;
+  background: url("https://images.unsplash.com/photo-1509099652299-30938b0aeb63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80") center;
+  background-size: cover;
+  color: black;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-right: 2rem;
+  box-shadow: 4px 4px 15px 2px rgba(black, 0.75);
+}
+
+/* Style the back side */
+.flipBoxThreeBack {
+  background: $white;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-right: 2rem;
+  box-shadow: 4px 4px 15px 2px rgba(black, 0.75);
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.flipBoxFour {
+  background-color: transparent;
+  margin: 5px;
+  width: 220px;
+  height: 395px;
+  position: relative;
+  left: 920px;
+  bottom: 405px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flipBoxFourInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flipBoxFour:hover .flipBoxFourInner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flipBoxFourFront,
+.flipBoxFourBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flipBoxFourFront {
+  // background-color: #bbb;
+  background: url("https://images.unsplash.com/photo-1531214159280-079b95d26139?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80") center;
+  background-size: cover;
+  color: black;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-right: 2rem;
+  box-shadow: 4px 4px 15px 2px rgba(black, 0.75);
+}
+
+/* Style the back side */
+.flipBoxFourBack {
+  background: $white;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-right: 2rem;
+  box-shadow: 4px 4px 15px 2px rgba(black, 0.75);
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.flipBoxFive {
+  background-color: transparent;
+  margin: 5px;
+  width: 450px;
+  height: 700px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flipBoxFiveInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flipBoxFive:hover .flipBoxFiveInner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flipBoxFiveFront,
+.flipBoxFiveBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flipBoxFiveFront {
+  background: url("https://mfiles.alphacoders.com/686/686956.png") no-repeat center top;
+  background-size: cover;
+  // background-color: #bbb;
+  // background: orange;
+  object-fit: fill;
+  display: block;
+  // 
+  color: black;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-right: 2rem;
+  box-shadow: 4px 4px 15px 2px rgba(black, 0.75);
+}
+
+/* Style the back side */
+.flipBoxFiveBack {
+  background: $white;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-right: 2rem;
+  box-shadow: 4px 4px 15px 2px rgba(black, 0.75);
+  color: black;
+  transform: rotateY(180deg);
+}

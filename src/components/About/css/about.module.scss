@@ -1,0 +1,41 @@
+$reactColor: #61dafb;
+$myWorkColor: #999;
+$white: white;
+
+// .section {
+//     padding: 100px 0 50px; //setting top is first left and right are second bottom is third
+//     // background-color: orange; // setting background color
+//   }
+ .section {
+   position: relative;
+   bottom: 380px;
+ }
+  .heading:before {
+    content: ""; // setting the content before the heading to empty
+    height: 10px; // setting height of div to 10px
+    width: 50px; // setting the width of the div
+    border-radius: 5px; // rounds out the corners
+    margin-bottom: 20px; // setting the margin (space between element borders and other element borders)
+    display: block; // display the element on a new line and take up the whole width
+    background: $reactColor; // setting the color
+  }
+  .heading {
+    // background-color: orange; // setting the background color
+  }
+  .myWorkColor {
+    color: $myWorkColor; // setting the text color
+  }
+
+  .font {
+      font-family: "Poppins" serif;
+      color: #777777;
+      line-height: 1.6;
+  }
+  .logos {
+    width: 365px;
+    height: auto;
+  }
+  .nodeLogo {
+    width: 213px;
+    height: auto;
+  }
