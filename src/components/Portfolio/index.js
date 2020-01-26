@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
-import { portfolioSection, section, heading, myWorkColor, portfolioFilter, current, portfolioLinks, projectContainer, thumbnail } from "./css/portfolio.module.scss";
+import React, {useState} from 'react';
+import { portfolioSection, section, heading, myWorkColor, portfolioFilter, current, portfolioLinks, projectContainer, flipBox, flipBoxInner, flipBoxFront, flipBoxBack, flipBoxTwo, flipBoxTwoInner, flipBoxTwoFront, flipBoxTwoBack, flipBoxThree, flipBoxThreeInner, flipBoxThreeFront, flipBoxThreeBack} from "./css/portfolio.module.scss";
 import { Container, Row, Col } from "reactstrap";
 import one from "./img/dbz.png";
 import two from "./img/temp/2.jpg";
@@ -14,6 +14,8 @@ import nine from "./img/temp/9.jpg";
 import ten from "./img/temp/10.jpg";
 
 function Portfolio(props) {
+  const [fullScreen, setFullScreen] = useState(false)
+  const toggleFullScreen = () => setFullScreen(prevState => !prevState)
 
   return (
     <div className={`${portfolioSection} ${section}`}>
@@ -41,13 +43,98 @@ function Portfolio(props) {
           </Col>
         </Row>
       </Container>
-      <Container fluid = {true}>
-        <div className={projectContainer}>contaier
-        <img className={thumbnail} src={two} alt="us"/>
+      <Container fluid={true}>
+        <Row>
         
-        </div>
+        <section>
+            <div className={flipBoxTwo}>
+                <div className={flipBoxTwoInner}>
+                    <div className={flipBoxTwoFront}>
+                        {/* <img src={props.image} alt={props.name} style={{ width: "300px", height: "200px" }} /> */}
+                    </div>
+                    <div className={flipBoxTwoBack}>
+                        <h2>{props.name}</h2>
+                        <a href={props.link}>Two</a>
+                        <br />
+                        <a href={props.github}>Link to Github</a>
+                        <p>{props.description}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div className={flipBoxTwo}>
+                <div className={flipBoxTwoInner}>
+                    <div className={flipBoxTwoFront}>
+                        {/* <img src={props.image} alt={props.name} style={{ width: "300px", height: "200px" }} /> */}
+                    </div>
+                    <div className={flipBoxTwoBack}>
+                        <h2>{props.name}</h2>
+                        <a href={props.link}>Two</a>
+                        <br />
+                        <a href={props.github}>Link to Github</a>
+                        <p>{props.description}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+        <div className={flipBox}>
+                <div className={flipBoxInner}>
+                    <div className={flipBoxFront}>
+                        {/* <img src={props.image} alt={props.name} style={{ width: "300px", height: "200px" }} /> */}
+                    </div>
+                    <div className={flipBoxBack}>
+                        <h2>{props.name}</h2>
+                        <a href={props.link}>One</a>
+                        <br />
+                        <a href={props.github}>Link to Github</a>
+                        <p>{props.description}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div className={flipBoxThree}>
+                <div className={flipBoxThreeInner}>
+                    <div className={flipBoxFront}>
+                        {/* <img src={props.image} alt={props.name} style={{ width: "300px", height: "200px" }} /> */}
+                    </div>
+                    <div className={flipBoxThreeBack}>
+                        <h2>{props.name}</h2>
+                        <a href={props.link}>3</a>
+                        <br />
+                        <a href={props.github}>Link to Github</a>
+                        <p>{props.description}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div className={flipBoxThree}>
+                <div className={flipBoxThreeInner}>
+                    <div className={flipBoxFront}>
+                        {/* <img src={props.image} alt={props.name} style={{ width: "300px", height: "200px" }} /> */}
+                    </div>
+                    <div className={flipBoxThreeBack}>
+                        <h2>{props.name}</h2>
+                        <a href={props.link}>3</a>
+                        <br />
+                        <a href={props.github}>Link to Github</a>
+                        <p>{props.description}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+      
+        
+        </Row>
 
       </Container>
+
 
 
     </div>
