@@ -30,6 +30,7 @@ $white: white;
   font-family: "Poppins" serif;
   color: #777777;
   line-height: 1.6;
+  font-size: 16.8px;
 }
 .logos {
   width: 365px;
@@ -40,109 +41,149 @@ $white: white;
   height: auto;
 }
 
-@media only screen and (min-width: 1200px) {
-  .section {
-    position: relative;
-    top: 50px;
-    left: 150px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .section {
-    position: relative;
-    left: 10px;
-    top: 170px;
-  }
-  .mongoLogo {
-    position: relative;
-    bottom: 79px;
-    right: 63px;
-  }
-  .expressLogo {
-    position: relative;
-    bottom: 249px;
-    left: 306px;
-  }
-  .reactLogoPic {
-    position: relative;
-    bottom: 300px;
-    right: 70px;
-  }
-  .nodeLogo {
-    position: relative;
-    bottom: 292px;
-    right: 37px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .section {
-    position: relative;
-    bottom: 266px;
-  }
-  .mongoLogo {
-    position: relative;
-    right: 60px;
-  }
-  .expressLogo {
-    position: relative;
-    right: 14px;
-  }
-  .reactLogoPic {
-    position: relative;
-    right: 70px;
-  }
+// @media only screen and (min-width: 1200px) {
+//   .heading {
+//     position: relative;
+//     left: 110px;
+//   }
+//   .section {
+//     position: relative;
+//     bottom: 1760px;
+//     width: 700px;
+//     height: 100px;
+//   }
+//   .font {
+//     position: relative;
+//     left: 470px;
+//     bottom: 110px;
+//   }
+//   .mongoLogo {
+//     position: relative;
+//     left: 410px;
+//   }
+//   .expressLogo {
+//     position: relative;
+//     left: 810px;
+//     bottom: 171px;
+//   }
+//   .reactLogoPic{
+//     position: relative;
+//     left: 390px;
+//     bottom: 10px;
+//   }
+//   .nodeLogo {
+//     position: relative;
+//     left: 470px;
+//   }
+// }
+// @media only screen and (min-width: 992px) {
+//   .heading {
+//     position: relative;
+//     left: 28px;
+//   }
+//   .section {
+//     position: relative;
+//     bottom: 1160px;
+//     left: 40px;
+//     width: 900px;
+//   }
+//   .font {
+//     padding-top: 10px;
+//     position: relative;
+//     font-size: 20px;
+//     top: 50px;
+//     left: 30px;
+//   }
+//   .mongoLogo {
+//     position: relative;
+//     right: -297px;
+//     bottom: -140px;
+//   }
+//   .expressLogo {
+//     position: relative;
+//     top: 449px;
+//     left: -22px;
+//   }
+//   .reactLogoPic {
+//     position: relative;
+//     top: 560px;
+//     left: 285px;
+//   }
+//   .nodeLogo {
+//     position: relative;
+//     top: 902px;
+//     left: -13px;
+//   }
+// }
+// @media only screen and (min-width: 768px) {
+//   .section {
+//     position: relative;
+//     bottom: 266px;
+//   }
+//   .mongoLogo {
+//     position: relative;
+//     right: 60px;
+//   }
+//   .expressLogo {
+//     position: relative;
+//     right: 14px;
+//   }
+//   .reactLogoPic {
+//     position: relative;
+//     right: 70px;
+//   }
  
-}
-@media only screen and (min-width: 600px) {
-  .section {
-    position: relative;
-    bottom: -90px;
-  }
-  .mongoLogo {
-    position: relative;
-    right: 240px;
-  }
-  .expressLogo {
-    position: relative;
-    left: 80px;
-    bottom: 170px;
-  }
-  .reactLogoPic {
-    position: relative;
-    bottom: 170px;
-    right: 256px;
-  }
-  .nodeLogo {
-    position: relative;
-    bottom: 313px;
-    left: 93px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .section {
-    position: relative;
-    top: 20px;
-  }
-  .mongoLogo {
-    position: relative;
-    right: 230px;
-  }
-  .expressLogo {
-    position: relative;
-    bottom: 166px;
-    left: 90px;
-  }
-  .reactLogoPic {
-    position: relative;
-    bottom: 155px;
-    right: 234px;
-  }
-  .nodeLogo {
-    position: relative;
-    bottom: 300px;
-    left: 100px;
-  }
-}
+// }
+// @media only screen and (min-width: 600px) {
+//   .section {
+//     position: relative;
+//     bottom: -90px;
+//   }
+//   .mongoLogo {
+//     position: relative;
+//     right: 240px;
+//   }
+//   .expressLogo {
+//     position: relative;
+//     left: 80px;
+//     bottom: 170px;
+//   }
+//   .reactLogoPic {
+//     position: relative;
+//     bottom: 170px;
+//     right: 256px;
+//   }
+//   .nodeLogo {
+//     position: relative;
+//     bottom: 313px;
+//     left: 93px;
+//   }
+// }
+// @media only screen and (max-width: 600px) {
+//   .section {
+//     position: relative;
+//     top: 20px;
+//   }
+//   .mongoLogo {
+//     position: relative;
+//     right: 230px;
+//   }
+//   .expressLogo {
+//     position: relative;
+//     bottom: 166px;
+//     left: 90px;
+//   }
+//   .reactLogoPic {
+//     position: relative;
+//     bottom: 155px;
+//     right: 234px;
+//   }
+//   .nodeLogo {
+//     position: relative;
+//     bottom: 300px;
+//     left: 100px;
+//   }
+// }
 // @media screen and (min-width: 1837px) {
 //   .heading {
 //     position: relative;

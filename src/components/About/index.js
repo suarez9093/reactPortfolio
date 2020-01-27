@@ -8,7 +8,7 @@ import node from "./img/node.png";
 
 function About(){
     return (
-        <div className={section}>
+        // <div className={section}>
         <Container >
           <Row>
             <Col xs="4">
@@ -38,7 +38,7 @@ function About(){
             </Col>
           </Row>
         </Container>
-        </div>
+        // </div>
     )
 
 };

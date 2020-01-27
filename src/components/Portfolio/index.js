@@ -20,12 +20,9 @@ function Portfolio(props) {
             </div>
           </Col>
         </Row>
-      </Container>
-      <Container fluid={true}>
-        <Row>
-
-
-
+      </Container> 
+        <Container fluid={true}>
+       <Row> 
           <section className={`${projects} ${cardTwo}`}>
             <div className={flipBoxTwo}>
               <div className={flipBoxTwoInner}>

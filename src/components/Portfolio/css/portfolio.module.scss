@@ -369,179 +369,201 @@ $white: white;
 //     right: 1000px;
 //   }
 // }
-@media only screen and (min-width: 1200px) {
-  .heading {
-    position: relative;
-    left: 150px;
-  }
-  .cardOne {
-    position: relative;
-    left: 250px;
-  }
-  .cardTwo {
-    position: relative;
-    left: 250px;
-  }
-  .cardThree {
-    position: relative;
-    right: 1130px;
-    top: 710px;
-  }
-  .cardFour {
-    position: relative;
-    right: 1130px;
-    top: 710px;
-  }
-  .cardFive {
-    position: relative;
-    left: 250px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .heading {
-    position: relative;
-    left: 35px;
-  }
+// @media only screen and (min-width: 1200px) {
+//   .heading {
+//     position: relative;
+//     left: 110px;
+//   }
+//   .flipBoxTwo {
+//     width: 400px;
+//   }
+//   .flipBox {
+//     width: 370px;
+//   }
+//   .cardOne {
+//     position: relative;
+//     bottom: 1409px;
+//     left: 820px;
+//   }
+//   .flipBoxThree {
+//     width: 180px;
+//   }
+//   .cardThree {
+//     position: relative;
+//     right: 104px;
+//     bottom: 1004px;
+//   }
+//   .flipBoxFour {
+//     width: 180px;
+//   }
+//   .flipBoxFourBack > p {
+//     font-size: 95%;
+//   }
+//   .cardFour {
+//     position: relative;
+//     right: -86px;
+//     bottom: 1403px;
+//   }
+//   .flipBoxFive {
+//     width: 400px;
+//   }
+//   .cardFive {
+//     position: relative;
+//     left: 408px;
+//     bottom: 706px;
+//   }
+  // .portfolioSection {
+  //   height: 2500px
+  // }
 
-  .cardOne {
-    position: relative;
-    left: 35px;
-    top: 50px;
-  }
-  .cardTwo {
-    position: relative;
-    left: 35px;
-    top: 50px;
-  }
-  .cardThree {
-    position: relative;
-    right: 885px;
-    top: 455px;
-  }
-  .cardFour {
-    position: relative;
-    right: 885px;
-    top: 455px;
-  }
-  .cardFive {
-    position: relative;
-    left: 35px;
-    top: 50px;
-  }
-  .flipBox {
-    height: 395px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .flipBox {
-    height: 450px;
-    width: 515px;
-  }
-  .flipBoxTwo {
-    height: 450px;
-    width: 515px;
-  }
-  .cardTwo {
-    position: relative;
-    bottom: 2px;
-  }
-  .cardThree {
-    position: relative;
-    right: 917px;
-    bottom: 518px;
-  }
-  .flipBoxThree {
-    height: 450px;
-  }
-  .cardFour {
-    position: relative;
-    right: 394px;
-    bottom: 55px;
-  }
-  .flipBoxFour {
-    height: 450px;
-  }
-  .flipBoxFive {
-    height: 450px;
-    width: 750px;
-  }
-}
-@media screen and (min-width: 600px) {
-.heading {
-  position: relative;
-  right: 30px;
-}
-.flipBoxFront {
-  background: url("https://images.unsplash.com/photo-1541877944-ac82a091518a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")
-    no-repeat center top;
-    background-size: cover;
-}
-.flipBoxTwo {
-  height: 470px;
-  width: 590px;
-}
-.flipBoxFive {
-  height: 470px;
-  width: 590px;
-}
-.flipBox {
-  width: 590px
-}
-.flipBoxThree{
-  width: 290px
-}
-.flipBoxThreeFront{
-  width: 290px;
-  background: url("https://images.unsplash.com/photo-1509099652299-30938b0aeb63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80")
-     top;
-  background-size: cover;
-}
-.flipBoxFour{
-  width: 290px
-}
-.cardThree {
-  position: relative;
-  right: 920px;
-  top: 402px;
-}
-.cardFour {
-position: relative;
-  right: 920px;
-  top: 402px;
-}
-}
-@media screen and (max-width: 600px) {
-  .flipBox {
-    width: 590px
-  }
-  .cardOne {
-    position: relative;
-    top: 310px;
-  }
-.flipBoxTwo {
-  width: 590px;
-  height: 350px;
-}
-.flipBoxFive {
-  width: 590px;
-  height: 350px;
-}
-.flipBoxThree {
-  height: 300px;
-  width: 285px;
-}
-.cardThree {
-  position: relative;
-    right: 920px;
-    top: 95px;
-}
-.flipBoxFour {
-  height: 300px;
-  width: 285px;
-}
-.cardFour {
-  position: relative;
-    right: 920px;
-    top: 95px;
-}
-}
+// @media only screen and (min-width: 992px) {
+//   .heading {
+//     position: relative;
+//     left: 62px;
+//     top: 20px;
+//   }
+//   .cardTwo {
+//     position: relative;
+//     left: 56px;
+//   }
+//   .cardFive {
+//     position: relative;
+//     left: 540px;
+//     bottom: 706px;
+//   }
+//   .cardOne {
+//     position: relative;
+//     bottom: 680px;
+//     left: 53px;
+//   }
+//   .flipBoxThree {
+//     height: 300px
+//   }
+//   .cardThree {
+//     position: relative;
+//     bottom: 583px;
+//     right: 387px;
+//   }
+//   .flipBoxFour {
+//     height: 300px;
+//   }
+//   .cardFour {
+//     position: relative;
+//     bottom: 889px;
+//     right: 147px;
+//   }
+
+// }
+// @media only screen and (min-width: 768px) {
+//   .flipBox {
+//     height: 450px;
+//     width: 515px;
+//   }
+//   .flipBoxTwo {
+//     height: 450px;
+//     width: 760px;
+//   }
+//   .cardTwo {
+//     position: relative;
+//     bottom: 2px;
+//   }
+//   .cardThree {
+//     position: relative;
+//     right: 917px;
+//     bottom: 518px;
+//   }
+//   .flipBoxThree {
+//     height: 450px;
+//   }
+//   .cardFour {
+//     position: relative;
+//     right: 394px;
+//     bottom: 55px;
+//   }
+//   .flipBoxFour {
+//     height: 450px;
+//   }
+//   .flipBoxFive {
+//     height: 450px;
+//     width: 760px;
+//   }
+// }
+// @media only screen and (min-width: 600px) {
+// .heading {
+//   position: relative;
+//   right: 30px;
+// }
+// .flipBoxFront {
+//   background: url("https://images.unsplash.com/photo-1541877944-ac82a091518a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")
+//     no-repeat center top;
+//     background-size: cover;
+// }
+// .flipBoxTwo {
+//   height: 470px;
+//   width: 590px;
+// }
+// .flipBoxFive {
+//   height: 470px;
+//   width: 590px;
+// }
+// .flipBox {
+//   width: 590px
+// }
+// .flipBoxThree{
+//   width: 290px
+// }
+// .flipBoxThreeFront{
+//   width: 290px;
+//   background: url("https://images.unsplash.com/photo-1509099652299-30938b0aeb63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80")
+//      top;
+//   background-size: cover;
+// }
+// .flipBoxFour{
+//   width: 290px
+// }
+// .cardThree {
+//   position: relative;
+//   right: 920px;
+//   top: 402px;
+// }
+// .cardFour {
+// position: relative;
+//   right: 920px;
+//   top: 402px;
+// }
+// }
+// @media only screen and (max-width: 600px) {
+//   .flipBox {
+//     width: 590px
+//   }
+//   .cardOne {
+//     position: relative;
+//     top: 310px;
+//   }
+// .flipBoxTwo {
+//   width: 590px;
+//   height: 350px;
+// }
+// .flipBoxFive {
+//   width: 590px;
+//   height: 350px;
+// }
+// .flipBoxThree {
+//   height: 300px;
+//   width: 285px;
+// }
+// .cardThree {
+//   position: relative;
+//     right: 920px;
+//     top: 95px;
+// }
+// .flipBoxFour {
+//   height: 300px;
+//   width: 285px;
+// }
+// .cardFour {
+//   position: relative;
+//     right: 920px;
+//     top: 95px;
+// }
+// }
