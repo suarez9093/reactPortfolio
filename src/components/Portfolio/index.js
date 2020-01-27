@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
-import { portfolioSection, section, heading, myWorkColor, portfolioFilter, current, portfolioLinks, projectContainer, flipBox, flipBoxInner, flipBoxFront, flipBoxBack, flipBoxTwo, flipBoxTwoInner, flipBoxTwoFront, flipBoxTwoBack, flipBoxThree, flipBoxThreeInner, flipBoxThreeFront, flipBoxThreeBack , flipBoxFour, flipBoxFourInner, flipBoxFourFront, flipBoxFourBack , flipBoxFive, flipBoxFiveInner, flipBoxFiveFront, flipBoxFiveBack } from "./css/portfolio.module.scss";
+import { portfolioSection, section, heading, myWorkColor, flipBox, flipBoxInner, flipBoxFront, flipBoxBack, flipBoxTwo, flipBoxTwoInner, flipBoxTwoFront, flipBoxTwoBack, flipBoxThree, flipBoxThreeInner, flipBoxThreeFront, flipBoxThreeBack , flipBoxFour, flipBoxFourInner, flipBoxFourFront, flipBoxFourBack , flipBoxFive, flipBoxFiveInner, flipBoxFiveFront, flipBoxFiveBack,  links } from "./css/portfolio.module.scss";
 import { Container, Row, Col } from "reactstrap";
 import realEstate from "./img/realEstate.jpg"
 
@@ -19,19 +19,6 @@ function Portfolio(props) {
 
             </div>
           </Col>
-          {/* <Col xs="8">
-            <div className={portfolioFilter}>
-              <a href="#" data-filter="*" className={`${current} ${portfolioLinks}`}>
-                <b>All</b>
-              </a>
-              <a href="#" className={portfolioLinks} data-filter=".react">
-                <b>React</b>
-              </a>
-              <a href="#" className={portfolioLinks} data-filter=".full-stack">
-                <b>Full Stack</b>
-              </a>
-            </div>
-          </Col> */}
         </Row>
       </Container>
       <Container fluid={true}>
@@ -45,10 +32,10 @@ function Portfolio(props) {
                 </div>
                 <div className={flipBoxTwoBack}>
                   <h2>{props.name}</h2>
-                  <a href="https://project-three-real-estate.herokuapp.com/">Link To Real Estate App</a>
+                  <a href="https://project-three-real-estate.herokuapp.com/">Link to Real Estate App</a>
                   <br />
                   <a href="https://github.com/suarez9093/real-estate">Link to Github</a>
-                  <p>description</p>
+                  <p>If you've ever been in the market to buy a house, or simply want to view one, you'd typically have to set up a showing with a realtor to view a home for sale. Our app lets you directly request an appointment to view a home without the need to go through a realtor. You simply open our app, request a showing if the home is listed in the directory of our houses that use smart lock technology and request a code that unlocks a home. Within minutes you can request a showing and be inside viewing a home. This project is a full stack application using MongoDB, Express, React and Node.</p>
                 </div>
               </div>
             </div>
@@ -58,14 +45,15 @@ function Portfolio(props) {
             <div className={flipBoxFive}>
               <div className={flipBoxFiveInner}>
                 <div className={flipBoxFiveFront}>
-                  {/* <img src={props.image} alt={props.name} style={{ width: "300px", height: "200px" }} /> */}
                 </div>
                 <div className={flipBoxFiveBack}>
                   <h2>{props.name}</h2>
-                  <a href={props.link}>Link to DragonBall Z Hangman</a>
+                  <div className={links}>
+                  <a  href="https://suarez9093.github.io/hangman/">Link to DragonBall Z Hangman</a>
                   <br />
-                  <a href={props.github}>Link to Github</a>
-                  <p>{props.description}</p>
+                  <a href="https://github.com/suarez9093/hangman">Link to Github</a>
+                  </div>
+                  <p>A hangman game built using the characters from the popular anime show DragonBall Z. You have 9 attempts to guess the word or character. This project was built with HTML, CSS, Bootstrap and JavaScript. </p>
                 </div>
               </div>
             </div>
@@ -75,14 +63,14 @@ function Portfolio(props) {
             <div className={flipBox}>
               <div className={flipBoxInner}>
                 <div className={flipBoxFront}>
-                  {/* <img src={props.image} alt={props.name} style={{ width: "300px", height: "200px" }} /> */}
+            
                 </div>
                 <div className={flipBoxBack}>
                   <h2>{props.name}</h2>
-                  <a href={props.link}>Link to YouTube Clone</a>
+                  <a href="https://enigmatic-scrubland-10809.herokuapp.com/">Link to YouTube Clone</a>
                   <br />
-                  <a href={props.github}>Link to Github</a>
-                  <p>{props.description}</p>
+                  <a href="https://github.com/suarez9093/react-youtube">Link to Github</a>
+                  <p>A site that is a simple YouTube clone. Users can search any video using the search bar. This site is a front end application built with React.</p>
                 </div>
               </div>
             </div>
@@ -91,14 +79,14 @@ function Portfolio(props) {
             <div className={flipBoxThree}>
               <div className={flipBoxThreeInner}>
                 <div className={flipBoxThreeFront}>
-                  {/* <img src={props.image} alt={props.name} style={{ width: "300px", height: "200px" }} /> */}
+                 
                 </div>
                 <div className={flipBoxThreeBack}>
-                  <h2>{props.name}</h2>
-                  <a href={props.link}>Link to Speed Typing Game</a>
+                <a href="https://suarez9093.github.io/reactSpeedTyingGame/">Link to Speed Typing Game</a>
                   <br />
-                  <a href={props.github}>Link to Github</a>
-                  <p>{props.description}</p>
+                  <a href="https://github.com/suarez9093/reactSpeedTyingGame">Link to Github</a>
+                  
+                  <p>A typing game that allows you to test how many words you can type before the time runs out. This is a front end application built with React.</p>
                 </div>
               </div>
             </div>
@@ -107,29 +95,23 @@ function Portfolio(props) {
             <div className={flipBoxFour}>
               <div className={flipBoxFourInner}>
                 <div className={flipBoxFourFront}>
-                  {/* <img src={props.image} alt={props.name} style={{ width: "300px", height: "200px" }} /> */}
                 </div>
                 <div className={flipBoxFourBack}>
-                  <h2>{props.name}</h2>
-                  <a href={props.link}>Link to Toy Story Game</a>
+                  <a href="https://whispering-river-96203.herokuapp.com/">Link to Toy Story Game</a>
                   <br />
-                  <a href={props.github}>Link to Github</a>
-                  <p>{props.description}</p>
+                  <a href="https://github.com/suarez9093/clickygame">Link to Github</a>
+                  <p>
+                    A memory game built using the toy characters from the movie Toy Story. Once you click on a character the cards move order. This application is a front end application built using React.</p>
                 </div>
               </div>
             </div>
+           
+
+         
           </section>
-
-
-
         </Row>
-
       </Container>
-
-
-
     </div>
-
   )
 };
 export default Portfolio;
