@@ -11,10 +11,10 @@ import resume from "./resume/alex_suarez_resume.pdf";
 function Header() {
   return (
     <header className={header}>
-      <Container>
+      {/* <Container>
         <Row>
           <Col xs="2"></Col>
-          <Col >
+          <Col > */}
             <div className={intro}>
               <div className={profileImage}>
                 <img id={portfolioImage} src={headshot} alt="headshot" />
@@ -59,10 +59,10 @@ function Header() {
                 </li>
               </ul>
             </div>
-          </Col>
+          {/* </Col>
           <Col xs="2"></Col>
         </Row>
-      </Container>
+      </Container> */}
     </header>
   );
 }

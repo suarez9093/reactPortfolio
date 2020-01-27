@@ -4,15 +4,41 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Portfolio from "./components/Portfolio";
 import About from "./components/About";
+import { Container, Row, Col } from "reactstrap"
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Portfolio />
-      <About />
-      <Footer />
-    </div>
+    <Container fluid={true}>
+      <Row>
+        <Col>
+          <Header />
+        </Col>
+
+      </Row>
+      <Row>
+        <Col>
+          <Portfolio />
+        </Col>
+      </Row>
+      <br />
+      <br /> 
+      <br />
+      <br />
+      <Row>
+        <Col>
+          <About />
+        </Col>
+
+      </Row>
+      <Row>
+        <Col>
+          <Footer />
+        </Col>
+
+      </Row>
+
+    </Container>
+
   );
 }
 export default App;

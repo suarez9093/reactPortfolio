@@ -57,35 +57,13 @@ $white: white;
   min-height: 100vh;
 }
 
-@media screen and (max-width: 995px) {
-  .portfolioLinks {
-    left: -5px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .portfolioLinks {
-    left: -25px;
-  }
-}
-@media screen and (max-width: 575px) {
-  .portfolioFilter {
-    position: relative;
-    top: 50px;
-    right: 100px;
-  }
-  .portfolioLinks {
-    padding-right: 10px;
-    margin-top: 17px;
-  }
-}
-
 .container {
   position: relative;
 }
 .flipBox {
   background-color: transparent;
   margin: 5px;
-  width: 447px;
+  width: 100%;
   height: 300px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -118,7 +96,8 @@ $white: white;
 .flipBoxFront {
   // background-color: #bbb;
 
-  background: url("https://images.unsplash.com/photo-1541877944-ac82a091518a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80") no-repeat center bottom;
+  background: url("https://images.unsplash.com/photo-1541877944-ac82a091518a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")
+    no-repeat center bottom;
   background-size: cover;
   // background-position: 50% ;
   color: black;
@@ -144,7 +123,7 @@ $white: white;
 .flipBoxTwo {
   background-color: transparent;
   margin: 5px;
-  width: 450px;
+  width: 100%;
   height: 700px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -175,13 +154,14 @@ $white: white;
 
 /* Style the front side (fallback if image is missing) */
 .flipBoxTwoFront {
-  background: url("https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80") no-repeat center ;
+  background: url("https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80")
+    no-repeat center;
   background-size: cover;
   // background-color: #bbb;
   // background: orange;
   object-fit: fill;
   display: block;
-  // 
+  //
   color: black;
   border-radius: 1rem;
   padding: 2rem;
@@ -205,11 +185,11 @@ $white: white;
 .flipBoxThree {
   background-color: transparent;
   margin: 5px;
-  width: 220px;
+  width: 100%;
   height: 395px;
-  position: relative;
-  left: 920px;
-  bottom: 405px;
+  // position: relative;
+  // left: 920px;
+  // bottom: 405px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -240,7 +220,8 @@ $white: white;
 /* Style the front side (fallback if image is missing) */
 .flipBoxThreeFront {
   // background-color: #bbb;
-  background: url("https://images.unsplash.com/photo-1509099652299-30938b0aeb63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80") center;
+  background: url("https://images.unsplash.com/photo-1509099652299-30938b0aeb63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80")
+    center;
   background-size: cover;
   color: black;
   border-radius: 1rem;
@@ -263,11 +244,9 @@ $white: white;
 .flipBoxFour {
   background-color: transparent;
   margin: 5px;
-  width: 220px;
+  width: 50%;
   height: 395px;
-  position: relative;
-  left: 920px;
-  bottom: 405px;
+  
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -298,7 +277,8 @@ $white: white;
 /* Style the front side (fallback if image is missing) */
 .flipBoxFourFront {
   // background-color: #bbb;
-  background: url("https://images.unsplash.com/photo-1531214159280-079b95d26139?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80") center;
+  background: url("https://images.unsplash.com/photo-1531214159280-079b95d26139?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")
+    center;
   background-size: cover;
   color: black;
   border-radius: 1rem;
@@ -321,7 +301,7 @@ $white: white;
 .flipBoxFive {
   background-color: transparent;
   margin: 5px;
-  width: 450px;
+  width: 100%;
   height: 700px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -352,13 +332,14 @@ $white: white;
 
 /* Style the front side (fallback if image is missing) */
 .flipBoxFiveFront {
-  background: url("https://mfiles.alphacoders.com/686/686956.png") no-repeat center top;
+  background: url("https://mfiles.alphacoders.com/686/686956.png") no-repeat
+    center top;
   background-size: cover;
   // background-color: #bbb;
   // background: orange;
   object-fit: fill;
   display: block;
-  // 
+  //
   color: black;
   border-radius: 1rem;
   padding: 2rem;
@@ -376,13 +357,211 @@ $white: white;
   color: black;
   transform: rotateY(180deg);
 }
-// .flipBoxBack, .flipBoxTwoBack, .flipBoxThreeBack, .flipBoxFourBack, .flipBoxFiveBack > p {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-  
-// }
 
 .links {
- margin-bottom: 10px;
+  margin-bottom: 10px;
 }
+// @media only screen and (min-width: 2880px) {
+//   .cardOne {
+//     position: relative;
+//     right: 1000px;
+//   }
+// }
+// @media only screen and (min-width: 1200px) {
+//   .heading {
+//     position: relative;
+//     left: 110px;
+//   }
+//   .flipBoxTwo {
+//     width: 400px;
+//   }
+//   .flipBox {
+//     width: 370px;
+//   }
+//   .cardOne {
+//     position: relative;
+//     bottom: 1409px;
+//     left: 820px;
+//   }
+//   .flipBoxThree {
+//     width: 180px;
+//   }
+//   .cardThree {
+//     position: relative;
+//     right: 104px;
+//     bottom: 1004px;
+//   }
+//   .flipBoxFour {
+//     width: 180px;
+//   }
+//   .flipBoxFourBack > p {
+//     font-size: 95%;
+//   }
+//   .cardFour {
+//     position: relative;
+//     right: -86px;
+//     bottom: 1403px;
+//   }
+//   .flipBoxFive {
+//     width: 400px;
+//   }
+//   .cardFive {
+//     position: relative;
+//     left: 408px;
+//     bottom: 706px;
+//   }
+  // .portfolioSection {
+  //   height: 2500px
+  // }
+
+// @media only screen and (min-width: 992px) {
+//   .heading {
+//     position: relative;
+//     left: 62px;
+//     top: 20px;
+//   }
+//   .cardTwo {
+//     position: relative;
+//     left: 56px;
+//   }
+//   .cardFive {
+//     position: relative;
+//     left: 540px;
+//     bottom: 706px;
+//   }
+//   .cardOne {
+//     position: relative;
+//     bottom: 680px;
+//     left: 53px;
+//   }
+//   .flipBoxThree {
+//     height: 300px
+//   }
+//   .cardThree {
+//     position: relative;
+//     bottom: 583px;
+//     right: 387px;
+//   }
+//   .flipBoxFour {
+//     height: 300px;
+//   }
+//   .cardFour {
+//     position: relative;
+//     bottom: 889px;
+//     right: 147px;
+//   }
+
+// }
+// @media only screen and (min-width: 768px) {
+//   .flipBox {
+//     height: 450px;
+//     width: 515px;
+//   }
+//   .flipBoxTwo {
+//     height: 450px;
+//     width: 760px;
+//   }
+//   .cardTwo {
+//     position: relative;
+//     bottom: 2px;
+//   }
+//   .cardThree {
+//     position: relative;
+//     right: 917px;
+//     bottom: 518px;
+//   }
+//   .flipBoxThree {
+//     height: 450px;
+//   }
+//   .cardFour {
+//     position: relative;
+//     right: 394px;
+//     bottom: 55px;
+//   }
+//   .flipBoxFour {
+//     height: 450px;
+//   }
+//   .flipBoxFive {
+//     height: 450px;
+//     width: 760px;
+//   }
+// }
+// @media only screen and (min-width: 600px) {
+// .heading {
+//   position: relative;
+//   right: 30px;
+// }
+// .flipBoxFront {
+//   background: url("https://images.unsplash.com/photo-1541877944-ac82a091518a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")
+//     no-repeat center top;
+//     background-size: cover;
+// }
+// .flipBoxTwo {
+//   height: 470px;
+//   width: 590px;
+// }
+// .flipBoxFive {
+//   height: 470px;
+//   width: 590px;
+// }
+// .flipBox {
+//   width: 590px
+// }
+// .flipBoxThree{
+//   width: 290px
+// }
+// .flipBoxThreeFront{
+//   width: 290px;
+//   background: url("https://images.unsplash.com/photo-1509099652299-30938b0aeb63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80")
+//      top;
+//   background-size: cover;
+// }
+// .flipBoxFour{
+//   width: 290px
+// }
+// .cardThree {
+//   position: relative;
+//   right: 920px;
+//   top: 402px;
+// }
+// .cardFour {
+// position: relative;
+//   right: 920px;
+//   top: 402px;
+// }
+// }
+// @media only screen and (max-width: 600px) {
+//   .flipBox {
+//     width: 590px
+//   }
+//   .cardOne {
+//     position: relative;
+//     top: 310px;
+//   }
+// .flipBoxTwo {
+//   width: 590px;
+//   height: 350px;
+// }
+// .flipBoxFive {
+//   width: 590px;
+//   height: 350px;
+// }
+// .flipBoxThree {
+//   height: 300px;
+//   width: 285px;
+// }
+// .cardThree {
+//   position: relative;
+//     right: 920px;
+//     top: 95px;
+// }
+// .flipBoxFour {
+//   height: 300px;
+//   width: 285px;
+// }
+// .cardFour {
+//   position: relative;
+//     right: 920px;
+//     top: 95px;
+// }
+// }
