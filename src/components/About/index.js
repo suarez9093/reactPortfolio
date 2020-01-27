@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import { section, heading, myWorkColor, font, logos, nodeLogo } from "./css/about.module.scss";
+import { section, heading, myWorkColor, font, logos, nodeLogo, mongoLogo, reactLogoPic,expressLogo } from "./css/about.module.scss";
 import mongo from "./img/mongodb.png";
 import express from "./img/express-logo.png";
 import reactLogo from "./img/react.jpg";
@@ -8,7 +8,7 @@ import node from "./img/node.png";
 
 function About(){
     return (
-        <div className={` ${section}`}>
+        <div className={section}>
         <Container >
           <Row>
             <Col xs="4">
@@ -30,9 +30,9 @@ function About(){
              
             </Col>
             <Col xs="8">
-            <img className={logos} src={mongo} alt="mongo"/>
-            <img className={logos} src={express} alt="express"/>
-            <img className={logos} src={reactLogo} alt="react"/>
+            <img className={`${logos} ${mongoLogo}`} src={mongo} alt="mongo"/>
+            <img className={`${logos} ${expressLogo}`} src={express} alt="express"/>
+            <img className={`${logos} ${reactLogoPic}`} src={reactLogo} alt="react"/>
             <img className={`${logos} ${nodeLogo}`} src={node} alt="node"/>
             
             </Col>

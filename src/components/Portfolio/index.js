@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
-import { portfolioSection, section, heading, myWorkColor, flipBox, flipBoxInner, flipBoxFront, flipBoxBack, flipBoxTwo, flipBoxTwoInner, flipBoxTwoFront, flipBoxTwoBack, flipBoxThree, flipBoxThreeInner, flipBoxThreeFront, flipBoxThreeBack , flipBoxFour, flipBoxFourInner, flipBoxFourFront, flipBoxFourBack , flipBoxFive, flipBoxFiveInner, flipBoxFiveFront, flipBoxFiveBack,  links } from "./css/portfolio.module.scss";
+import { portfolioSection, section, heading, myWorkColor, flipBox, flipBoxInner, flipBoxFront, flipBoxBack, flipBoxTwo, flipBoxTwoInner, flipBoxTwoFront, flipBoxTwoBack, flipBoxThree, flipBoxThreeInner, flipBoxThreeFront, flipBoxThreeBack , flipBoxFour, flipBoxFourInner, flipBoxFourFront, flipBoxFourBack , flipBoxFive, flipBoxFiveInner, flipBoxFiveFront, flipBoxFiveBack,  links, smallCards, projects, cardThree, cardFour, cardOne, cardTwo, cardFive } from "./css/portfolio.module.scss";
 import { Container, Row, Col } from "reactstrap";
 import realEstate from "./img/realEstate.jpg"
 
@@ -24,7 +24,9 @@ function Portfolio(props) {
       <Container fluid={true}>
         <Row>
 
-          <section>
+
+
+          <section className={`${projects} ${cardTwo}`}>
             <div className={flipBoxTwo}>
               <div className={flipBoxTwoInner}>
                 <div className={flipBoxTwoFront}>
@@ -41,7 +43,7 @@ function Portfolio(props) {
             </div>
           </section>
 
-          <section>
+          <section className={`${projects} ${cardFive}`}>
             <div className={flipBoxFive}>
               <div className={flipBoxFiveInner}>
                 <div className={flipBoxFiveFront}>
@@ -59,7 +61,7 @@ function Portfolio(props) {
             </div>
           </section>
 
-          <section>
+          <section className={`${projects} ${cardOne}`}>
             <div className={flipBox}>
               <div className={flipBoxInner}>
                 <div className={flipBoxFront}>
@@ -75,11 +77,11 @@ function Portfolio(props) {
               </div>
             </div>
           </section>
-          <section>
-            <div className={flipBoxThree}>
+          <section className={`${projects} ${smallCards} ${cardThree}`}>
+            <div className={`${flipBoxThree} ${smallCards}`}>
               <div className={flipBoxThreeInner}>
                 <div className={flipBoxThreeFront}>
-                 
+              
                 </div>
                 <div className={flipBoxThreeBack}>
                 <a href="https://suarez9093.github.io/reactSpeedTyingGame/">Link to Speed Typing Game</a>
@@ -91,8 +93,8 @@ function Portfolio(props) {
               </div>
             </div>
           </section>
-          <section>
-            <div className={flipBoxFour}>
+          <section className={`${projects} ${smallCards} ${cardFour}`}>
+            <div className={`${flipBoxFour} `}>
               <div className={flipBoxFourInner}>
                 <div className={flipBoxFourFront}>
                 </div>
@@ -105,10 +107,8 @@ function Portfolio(props) {
                 </div>
               </div>
             </div>
-           
-
-         
           </section>
+
         </Row>
       </Container>
     </div>
