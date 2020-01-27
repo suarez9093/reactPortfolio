@@ -11,24 +11,28 @@ function App() {
     <Container fluid={true}>
       <Row>
         <Col>
-        <Header />
+          <Header />
         </Col>
 
       </Row>
       <Row>
         <Col>
-        <Portfolio />
+          <Portfolio />
         </Col>
       </Row>
+      <br />
+      <br /> 
+      <br />
+      <br />
       <Row>
         <Col>
-        <About />
+          <About />
         </Col>
 
       </Row>
       <Row>
         <Col>
-        <Footer />
+          <Footer />
         </Col>
 
       </Row>
