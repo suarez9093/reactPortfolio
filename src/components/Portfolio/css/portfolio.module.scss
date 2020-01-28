@@ -335,11 +335,9 @@ $white: white;
   background: url("https://mfiles.alphacoders.com/686/686956.png") no-repeat
     center top;
   background-size: cover;
-  // background-color: #bbb;
-  // background: orange;
   object-fit: fill;
   display: block;
-  //
+
   color: black;
   border-radius: 1rem;
   padding: 2rem;
@@ -361,19 +359,19 @@ $white: white;
 .links {
   margin-bottom: 10px;
 }
-@media only screen and (max-width: 768px) {
-  .flipBoxBack {
-    font-size: 13px;
+
+
+@media only screen and (max-width: 576px) {
+   .flipBoxBack {
+    font-size: 10px;
   }
   .flipBoxThreeBack {
-    font-size: 13px;
+    font-size: 12px;
+  }
+  .flipBoxFiveBack {
+    font-size: 14px;
   }
 }
-// @media only screen and (max-width: 576px) {
-//   .flipBoxBack {
-//     font-size: 12px;
-//   }
-// }
 
 
 

@@ -52,6 +52,7 @@ function Portfolio(props) {
                   <div className={links}>
                     <a href="https://suarez9093.github.io/hangman/">Link to DragonBall Z Hangman</a>
                     <br />
+                    <br />
                     <a href="https://github.com/suarez9093/hangman">Link to Github</a>
                   </div>
                   <p>A hangman game built using the characters from the popular anime show DragonBall Z. You have 9 attempts to guess the word or character. This project was built with HTML, CSS, Bootstrap and JavaScript. </p>
@@ -72,7 +73,10 @@ function Portfolio(props) {
                   <h2>{props.name}</h2>
                   <a href="https://enigmatic-scrubland-10809.herokuapp.com/">Link to YouTube Clone</a>
                   <br />
+                  <br />
                   <a href="https://github.com/suarez9093/react-youtube">Link to Github</a>
+                  <br />
+                  <br />
                   <p>A site that is a simple YouTube clone. Users can search any video using the search bar. This site is a front end application built with React.</p>
                 </div>
               </div>
@@ -86,7 +90,10 @@ function Portfolio(props) {
                     <div className={flipBoxThreeBack}>
                       <a href="https://suarez9093.github.io/reactSpeedTyingGame/">Link to Speed Typing Game</a>
                       <br />
+                      <br />
                       <a href="https://github.com/suarez9093/reactSpeedTyingGame">Link to Github</a>
+                      <br />
+                      <br />
 
                       <p>A typing game that allows you to test how many words you can type before the time runs out. This is a front end application built with React.</p>
                     </div>

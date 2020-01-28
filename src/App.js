@@ -21,7 +21,7 @@ function App() {
         </Col>
       </Row>
       <br />
-      <br /> 
+      <br />
       <br />
       <br />
       <Row>
@@ -30,6 +30,10 @@ function App() {
         </Col>
 
       </Row>
+      <br />
+      <br />
+      <br />
+      <br />
       <Row>
         <Col>
           <Footer />

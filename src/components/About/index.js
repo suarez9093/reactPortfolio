@@ -5,6 +5,7 @@ import { section, heading, myWorkColor, font, mernLogo, nodeLogo, mongoLogo, rea
 // import express from "./img/express-logo.png";
 // import reactLogo from "./img/react.jpg";
 import mern from "./img/mern.png";
+// import Image from 'react-bootstrap/Image'
 
 function About() {
   return (
@@ -28,8 +29,10 @@ function About() {
      
       <Col xs="4"></Col>
         <Col xs="8">
+          {/* <Image src={mern} fluid/> */}
+          <img src={mern} className="img-fluid" alt="Responsive image" />
           {/* <img src={mern} alt="logos" /> */}
-          <div className={mern}></div>
+          {/* <div className={mern}></div> */}
         </Col>
 
       </Row>
