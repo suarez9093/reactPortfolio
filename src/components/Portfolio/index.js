@@ -10,7 +10,7 @@ function Portfolio(props) {
 
   return (
     // <div className={`${portfolioSection} ${section}`}>
-    <Container fluid={true} >
+    <div className="container-fluid" >
       <Row>
         <Col xs="4">
           <div className={heading}>
@@ -22,26 +22,26 @@ function Portfolio(props) {
       </Row>
 
 
-      <Row xs="3">
-        <Col>
+        
+      <div className="row">
+        <div className="col d-none d-sm-block">
           <section className={` ${cardTwo}`}>
             <div className={flipBoxTwo}>
               <div className={flipBoxTwoInner}>
                 <div className={flipBoxTwoFront}>
-                  {/* <img src={props.image} alt={props.name} style={{ width: "300px", height: "200px" }} /> */}
                 </div>
                 <div className={flipBoxTwoBack}>
                   <h2>{props.name}</h2>
                   <a href="https://project-three-real-estate.herokuapp.com/">Link to Real Estate App</a>
                   <br />
                   <a href="https://github.com/suarez9093/real-estate">Link to Github</a>
-                  <p>If you've ever been in the market to buy a house, or simply want to view one, you'd typically have to set up a showing with a realtor to view a home for sale. Our app lets you directly request an appointment to view a home without the need to go through a realtor. You simply open our app, request a showing if the home is listed in the directory of our houses that use smart lock technology and request a code that unlocks a home. Within minutes you can request a showing and be inside viewing a home. This project is a full stack application using MongoDB, Express, React and Node.</p>
+                  <p >A real estate app built for the purpose of scheduling home viewings without the need of a real estate agent. This project is a full stack application using MongoDB, Express, React and Node.</p>
                 </div>
               </div>
             </div>
           </section>
-        </Col>
-        <Col >
+        </div>
+        <div className="col">
           <section className={`${projects} ${cardFive}`}>
             <div className={flipBoxFive}>
               <div className={flipBoxFiveInner}>
@@ -59,9 +59,10 @@ function Portfolio(props) {
               </div>
             </div>
           </section>
-        </Col>
+        </div>
 
-        <Col>
+      
+        <div className="col">
           <section className={`${projects} ${cardOne}`}>
             <div className={flipBox}>
               <div className={flipBoxInner}>
@@ -107,16 +108,15 @@ function Portfolio(props) {
                   </div>
                 </div>
               </section> */}
-          </Col>
-     
+          </div>
+          
 
 
 
 
 
-      </Row>
-    </Container>
-    //  </div>
+      </div>
+    </div>
   )
 };
 export default Portfolio;
