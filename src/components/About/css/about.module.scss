@@ -31,8 +31,8 @@ $white: white;
   width: 100%;
   background-image: url("../img/mern.png");
 }
-@media only screen and (min-width: 1200px) {
-  // .mern {
-  //   wid
-  // }
+@media only screen and (max-width: 576px) {
+  .font {
+    font-size: 10px !important;
+  }
 }

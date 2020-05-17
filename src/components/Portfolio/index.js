@@ -1,12 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from 'react';
-import { portfolioSection, section, heading, myWorkColor, flipBox, flipBoxInner, flipBoxFront, flipBoxBack, flipBoxTwo, flipBoxTwoInner, flipBoxTwoFront, flipBoxTwoBack, flipBoxThree, flipBoxThreeInner, flipBoxThreeFront, flipBoxThreeBack, flipBoxFour, flipBoxFourInner, flipBoxFourFront, flipBoxFourBack, flipBoxFive, flipBoxFiveInner, flipBoxFiveFront, flipBoxFiveBack, links, smallCards, projects, cardThree, cardFour, cardOne, cardTwo, cardFive } from "./css/portfolio.module.scss";
-import { Container, Row, Col } from "reactstrap";
-import realEstate from "./img/realEstate.jpg"
+import React from 'react';
+import { heading, myWorkColor, flipBox, flipBoxInner, flipBoxFront, flipBoxBack, flipBoxTwo, flipBoxTwoInner, flipBoxTwoFront, flipBoxTwoBack, flipBoxThree, flipBoxThreeInner, flipBoxThreeFront, flipBoxThreeBack, flipBoxFour, flipBoxFourInner, flipBoxFourFront, flipBoxFourBack, flipBoxFive, flipBoxFiveInner, flipBoxFiveFront, flipBoxFiveBack, links, smallCards, projects, cardThree, cardFour, cardOne, cardTwo, cardFive } from "./css/portfolio.module.scss";
+import { Row, Col } from "reactstrap";
 
 function Portfolio(props) {
-  const [fullScreen, setFullScreen] = useState(false)
-  const toggleFullScreen = () => setFullScreen(prevState => !prevState)
 
   return (
     // <div className={`${portfolioSection} ${section}`}>
@@ -17,12 +14,12 @@ function Portfolio(props) {
             <h3><b>Portfolio</b></h3>
             <h6 className={myWorkColor}><b>My work</b></h6>
 
-          </div>
+          </div>xs
         </Col>
       </Row>
 
 
-        
+
       <div className="row">
         <div className="col d-none d-sm-block">
           <section className={` ${cardTwo}`}>
@@ -62,7 +59,7 @@ function Portfolio(props) {
           </section>
         </div>
 
-      
+
         <div className="col">
           <section className={`${projects} ${cardOne}`}>
             <div className={flipBox}>
@@ -82,41 +79,27 @@ function Portfolio(props) {
               </div>
             </div>
           </section>
-              <section className={`${projects} ${smallCards} ${cardThree}`}>
-                <div className={`${flipBoxThree} ${smallCards}`}>
-                  <div className={flipBoxThreeInner}>
-                    <div className={flipBoxThreeFront}>
-                    </div>
-                    <div className={flipBoxThreeBack}>
-                      <a href="https://suarez9093.github.io/reactSpeedTyingGame/">Link to Speed Typing Game</a>
-                      <br />
-                      <br />
-                      <a href="https://github.com/suarez9093/reactSpeedTyingGame">Link to Github</a>
-                      <br />
-                      <br />
+          <section className={`${projects} ${smallCards} ${cardThree}`}>
+            <div className={`${flipBoxThree} ${smallCards}`}>
+              <div className={flipBoxThreeInner}>
+                <div className={flipBoxThreeFront}>
+                </div>
+                <div className={flipBoxThreeBack}>
+                  <a href="https://suarez9093.github.io/reactSpeedTyingGame/">Link to Speed Typing Game</a>
+                  <br />
+                  <br />
+                  <a href="https://github.com/suarez9093/reactSpeedTyingGame">Link to Github</a>
+                  <br />
+                  <br />
 
-                      <p>A typing game that allows you to test how many words you can type before the time runs out. This is a front end application built with React.</p>
-                    </div>
-                  </div>
+                  <p>A typing game that allows you to test how many words you can type before the time runs out. This is a front end application built with React.</p>
                 </div>
-              </section>
-              {/* <section className={`${projects} ${smallCards} ${cardFour}`}>
-                <div className={`${flipBoxFour} `}>
-                  <div className={flipBoxFourInner}>
-                    <div className={flipBoxFourFront}>
-                    </div>
-                    <div className={flipBoxFourBack}>
-                      <a href="https://whispering-river-96203.herokuapp.com/">Link to Toy Story Game</a>
-                      <br />
-                      <a href="https://github.com/suarez9093/clickygame">Link to Github</a>
-                      <p>
-                        A memory game built using the toy characters from the movie Toy Story. Once you click on a character the cards move order. This application is a front end application built using React.</p>
-                    </div>
-                  </div>
-                </div>
-              </section> */}
-          </div>
-          
+              </div>
+            </div>
+          </section>
+
+        </div>
+
 
 
 
