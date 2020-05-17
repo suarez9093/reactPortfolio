@@ -13,7 +13,7 @@ function Portfolio(props) {
             <h3><b>Portfolio</b></h3>
             <h6 className={myWorkColor}><b>My work</b></h6>
 
-          </div>xs
+          </div>
         </Col>
       </Row>
       <div className="row">
