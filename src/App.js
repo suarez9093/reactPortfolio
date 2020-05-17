@@ -13,7 +13,6 @@ function App() {
         <Col>
           <Header />
         </Col>
-
       </Row>
       <Row>
         <Col>
@@ -28,7 +27,6 @@ function App() {
         <Col>
           <About />
         </Col>
-
       </Row>
       <br />
       <br />
@@ -38,11 +36,8 @@ function App() {
         <Col>
           <Footer />
         </Col>
-
       </Row>
-
     </Container>
-
   );
 }
 export default App;

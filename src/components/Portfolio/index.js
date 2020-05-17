@@ -4,7 +4,6 @@ import { heading, myWorkColor, flipBox, flipBoxInner, flipBoxFront, flipBoxBack,
 import { Row, Col } from "reactstrap";
 
 function Portfolio(props) {
-
   return (
     // <div className={`${portfolioSection} ${section}`}>
     <div className="container-fluid" >
@@ -17,9 +16,6 @@ function Portfolio(props) {
           </div>xs
         </Col>
       </Row>
-
-
-
       <div className="row">
         <div className="col d-none d-sm-block">
           <section className={` ${cardTwo}`}>
@@ -58,8 +54,6 @@ function Portfolio(props) {
             </div>
           </section>
         </div>
-
-
         <div className="col">
           <section className={`${projects} ${cardOne}`}>
             <div className={flipBox}>
@@ -97,14 +91,7 @@ function Portfolio(props) {
               </div>
             </div>
           </section>
-
         </div>
-
-
-
-
-
-
       </div>
     </div>
   )

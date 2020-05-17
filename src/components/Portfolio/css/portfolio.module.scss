@@ -22,9 +22,7 @@ $white: white;
   display: block; // display the element on a new line and take up the whole width
   background: $reactColor; // setting the color
 }
-.heading {
-  // background-color: orange; // setting the background color
-}
+
 .myWorkColor {
   color: $myWorkColor; // setting the text color
 }
@@ -94,8 +92,6 @@ $white: white;
 
 /* Style the front side (fallback if image is missing) */
 .flipBoxFront {
-  // background-color: #bbb;
-
   background: url("https://images.unsplash.com/photo-1541877944-ac82a091518a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")
     no-repeat center bottom;
   background-size: cover;
@@ -246,7 +242,7 @@ $white: white;
   margin: 5px;
   width: 50%;
   height: 395px;
-  
+
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -360,9 +356,8 @@ $white: white;
   margin-bottom: 10px;
 }
 
-
 @media only screen and (max-width: 576px) {
-   .flipBoxBack {
+  .flipBoxBack {
     font-size: 10px;
   }
   .flipBoxThreeBack {
@@ -372,6 +367,3 @@ $white: white;
     font-size: 14px;
   }
 }
-
-
-

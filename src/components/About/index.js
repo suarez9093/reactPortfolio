@@ -1,15 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import { section, heading, myWorkColor, font, mernLogo, nodeLogo, mongoLogo, reactLogoPic, expressLogo } from "./css/about.module.scss";
-// import mongo from "./img/mongodb.png";
-// import express from "./img/express-logo.png";
-// import reactLogo from "./img/react.jpg";
+import { heading, myWorkColor, font } from "./css/about.module.scss";
 import mern from "./img/mern.png";
-// import Image from 'react-bootstrap/Image'
 
 function About() {
   return (
-    // <div className={section}>
     <Container >
       <Row>
         <Col xs="4">
@@ -26,18 +21,15 @@ function About() {
       <br />
       <br />
       <Row>
-     
-      <Col xs="4"></Col>
+
+        <Col xs="4"></Col>
         <Col xs="8">
-          {/* <Image src={mern} fluid/> */}
-          <img src={mern} className="img-fluid" alt="Responsive image" />
-          {/* <img src={mern} alt="logos" /> */}
-          {/* <div className={mern}></div> */}
+          <img src={mern} className="img-fluid" alt="Responsive-img" />
+
         </Col>
 
       </Row>
     </Container>
-    // </div>
   )
 
 };

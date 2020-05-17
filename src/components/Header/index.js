@@ -2,7 +2,6 @@ import React from 'react';
 import { header, intro, profileImage, portfolioImage, fontYellow, information, socialIcons, fontAwesomeIcon } from "./css/header.module.scss";
 import "./css/header.css"
 import headshot from "./img/headshot.png";
-// import { Container, Row, Col, Button } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons"
 import { faPaperclip } from "@fortawesome/free-solid-svg-icons"
@@ -11,10 +10,6 @@ import resume from "./resume/alex_suarez_resume.pdf";
 function Header() {
   return (
     <header className={header}>
-      {/* <Container>
-        <Row>
-          <Col xs="2"></Col>
-          <Col > */}
       <div className={intro}>
         <div className={profileImage}>
           <img id={portfolioImage} src={headshot} alt="headshot" />
@@ -33,7 +28,6 @@ function Header() {
                     </a>
           </li>
           <li>
-            {/* <a className={resumeLink} href={resume}>View Resume</a> */}
           </li>
         </ul>
         <ul className={socialIcons}>
@@ -59,10 +53,6 @@ function Header() {
           </li>
         </ul>
       </div>
-      {/* </Col>
-          <Col xs="2"></Col>
-        </Row>
-      </Container> */}
     </header>
   );
 }
